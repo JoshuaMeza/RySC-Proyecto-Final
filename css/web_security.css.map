@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,yGAAI,CAGZ,AAAA,IAAI,AAAC,CACD,SAAS,CAAE,KAAK,CAChB,UAAU,CAAE,KAAK,CACjB,WAAW,CAAE,mBAAmB,CACnC,AIPD,AAAA,IAAI,AAAC,CACD,gBAAgB,CAAE,0xSAA0xS,CAC/yS,AAED,AAAA,IAAI,AAAC,CACD,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,KAAK,CACd,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,SAAS,CAClB,gBAAgB,CAAE,KAAK,CAC1B",
+    "sources": [
+        "../scss/web_security.scss",
+        "../scss/global/_general.scss",
+        "../scss/global/_variables.scss",
+        "../scss/global/_animations.scss",
+        "../scss/global/_variables.scss",
+        "../scss/global/_template_background.scss"
+    ],
+    "names": [],
+    "file": "web_security.css"
+}

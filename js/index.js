@@ -2,6 +2,18 @@
 const CONTAINER = $("#world-container");
 const PREV_BTN = $("#previous > i");
 const NEXT_BTN = $("#next > i");
+const TITLE_CONTAINER = $("#title-container");
+const JM = $("#img-jm");
+const JG = $("#img-jg");
+const RG = $("#img-rg");
+
+// Helper
+function hideAllWorldContainerContents() {
+	TITLE_CONTAINER.addClass("d-none");
+	JM.addClass("d-none");
+	JG.addClass("d-none");
+	RG.addClass("d-none");
+}
 
 // Classes
 class TransitionManager {
@@ -42,6 +54,7 @@ class TransitionState {
 	}
 
     defaultAction() {
+		hideAllWorldContainerContents();
 		CONTAINER.removeClass();
 		if (this.previous == null) {
 			PREV_BTN.addClass("d-none");
@@ -58,10 +71,22 @@ class TransitionState {
 
 // States
 var state0 = new TransitionState(() => {
-	CONTAINER.addClass("world-frame-19");
+	CONTAINER.addClass("world-frame-01");
+	
+	TITLE_CONTAINER.removeClass("d-none");
+	JM.removeClass("d-none");
+	JG.removeClass("d-none");
+	RG.removeClass("d-none");
+
+	setTimeout(function () {
+		TITLE_CONTAINER.removeClass("appear-title");
+		JM.removeClass("appear-jm");
+		JG.removeClass("appear-jg");
+		RG.removeClass("appear-rg");
+	}, 2000)
 });
 var state1 = new TransitionState(() => {
-	CONTAINER.addClass("world-frame-15");
+	CONTAINER.addClass("world-frame-02");
 });
 
 // Assign states

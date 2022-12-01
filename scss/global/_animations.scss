@@ -1,1 +1,37 @@
 @import 'variables';
+
+@mixin scaleAnimation {
+    overflow: hidden;
+    transform: scaleX(0);
+    animation: scaleToNormal 1s ease-out forwards;
+
+    h1 {
+        transform: translate(0, 200px);
+        animation: scrollToStart 0.4s 0.5s ease-out forwards;
+    }
+
+    @keyframes scaleToNormal {
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes scrollToStart {
+        to {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+@mixin appearAnimation($delay) {
+    transform: scale(0, 0);
+    opacity: 0;
+    animation: scaleToNormal 0.4s (1 + $delay) ease-out forwards;
+
+    @keyframes scaleToNormal {
+        to {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
+}

@@ -8,10 +8,11 @@ body {
 }
 
 #world-container {
+    position: relative;
     width: 640px;
     height: 640px;
 
-    border: 2px solid $index_button_normal;
+    // border: 2px solid $index_button_normal;
 }
 
 .world-button {
@@ -32,4 +33,66 @@ body {
     &:active {
         color: $index_button_active;
     }
+}
+
+#title-container {
+    width: 500px;
+    background: $index_title_container_background;
+    padding: 5px 10px;
+    
+    position: absolute;
+    right: 70px;
+    top: 120px;
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        color: $index_title_color;
+        margin: 0;
+    }
+}
+
+.appear-title {
+    @include scaleAnimation;
+}
+
+.author-img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+#img-jm {
+    position: absolute;
+    right: 120px;
+    top: 400px;
+}
+
+#img-jg {
+    position: absolute;
+    right: 270px;
+    top: 310px;
+}
+
+#img-rg {
+    position: absolute;
+    right: 370px;
+    top: 430px;
+}
+
+.appear-jm {
+    @include appearAnimation(0.3s);
+}
+
+.appear-jg {
+    @include appearAnimation(0.2s);
+}
+
+.appear-rg {
+    @include appearAnimation(0.4s);
 }
