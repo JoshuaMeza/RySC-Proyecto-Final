@@ -1,0 +1,23 @@
+{
+  "name": "redes_proy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaMeza/RySC-Proyecto-Final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaMeza/RySC-Proyecto-Final/issues"
+  },
+  "homepage": "https://joshuameza.github.io/RySC-Proyecto-Final",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
