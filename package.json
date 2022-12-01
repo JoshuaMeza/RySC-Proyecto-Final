@@ -6,10 +6,6 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JoshuaMeza/RySC-Proyecto-Final.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
