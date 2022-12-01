@@ -30,8 +30,34 @@
         </div>
     </nav>
 
-    <main class="container shadow">
+    <main class="container shadow" style="text-align: justify;">
         <h1 class="text-center">Programación de aplicaciones con sockets</h1>
+        <br>
+        <div>
+            <img class="mx-auto d-block" style="max-width: 50%;" src="/img/sockets.png" alt="Card image cap">
+        </div>
+        <br>
+        <p>Debido a su ubicuidad, la familia de protocolos TCP/IP se considera como un estándar de facto, sin embargo, no ocurre lo mismo con las interfaces de programación disponibles para desarrollar aplicaciones en red. En general, cada tipo de sistema operativo provee una API de comunicación TCP/IP. Tales interfaces presentan aspectos comunes derivados principalmente de la interfaz de comunicación de los sistemas operativos tipo Unix (Berkeley Sockets).<br>
+            Por ejemplo, Microsoft Windows incluye una interfaz de programación denominada Windows Sockets 2 basada en el paradigma popularizado por los Berkeley Sockets. Las diferencias en su arquitectura en relación con éstos últimos son reflejo del Modelo de Arquitectura de Sistema Abierto de Windows (WOSA, Windows Open System Architecture). Por su parte, Java también ofrece una interfaz de programación TCP/IP que incluye la orientación a objetos y portabilidad que le caracteriza.<br>
+            La interfaz, conocida como socket, fue tan ampliamente aceptada que se convirtió en un estándar de facto. El UNIX System V usa en su lugar el Transport Level Interface (TLI). No obstante, el uso de los sockets está tan extendido que es habitual que cualquier implementación de UNIX disponga de este interfaz por compatibilidad con el BSD.
+            Un socket en programación es un túnel de comunicación que ayuda a que 2 aplicaciones se comuniquen, los sockets son la base de internet y de sus protocolos como HTTP, FTP, SMTP, etc.<br>
+        </p>
+        <img class="mx-auto d-block" style="max-width: 40%; float: left; padding: 1% 3% 2% 0" src="/img/windows_socket.png" alt="Card image cap">
+        <p>Los sockets son la base de los protocolos de internet, pero también se pueden utilizar para otras cosas, por ejemplo, mediante sockets podemos hacer que dos aplicaciones se comuniquen entre sí, para ello:
+            <ul>
+                <li>Servidor (el que escucha). El servidor siempre escucha por un puerto (por donde pasan los datos) lo que el cliente diga y si tiene respuesta, entonces responde.</li>
+                <li>Cliente (el que habla). Normalmente el cliente se conecta al servidor por el puerto y le empieza a enviar peticiones y esperando respuestas.</li>
+                <li>Por donde pasan los datos, realmente es por un puerto de entrada para el servidor y un puerto de salida para el cliente.</li>
+                <li>El tema de conversación (protocolo), para que haya comunicación entre las 2 aplicaciones, estas deben estar programadas para responderse entre sí, lo cual se denomina protocolo.</li>
+            </ul>
+            La comunicación entre 2 aplicaciones puede ser:<br>
+            <ul>
+                <li><strong>Remota:</strong> cuando las aplicaciones están en diferentes computadoras, la aplicación cliente se conecta la dirección IP y puerto del servidor.</li>
+                <li><strong>Local:</strong> cuando las 2 aplicaciones están en la misma computadora, se usa la dirección IP de LOOPBACK la cual es LOCALHOST o 127.0.0.1.</li>
+            </ul>
+            Los sockets son una característica universal en cualquier lenguaje de programación, y además sin límites, una aplicación hecha en PHP se puede comunicar con otra hecha en JAVA y viceversa, o una aplicación hecha en Python se puede comunicar con una hecha C# .NET.
+            <br>Gracias a esto tenemos navegadores, clientes de correo, clientes FTP, etc. Así, funcionan y se comunican con los servidores sin importar el sistema operativo en que funcionen o lenguaje de programación en que estén programados.
+        </p>
     </main>
 
     <script src="https://kit.fontawesome.com/a2e2b9d23e.js" crossorigin="anonymous"></script>
