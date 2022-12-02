@@ -79,14 +79,10 @@ class TransitionState {
 	}
 
     defaultAction() {
-		if (this.previous == null) {
-			PREV_BTN.addClass("d-none");
-		} else {
+		if (this.previous != null) {
 			PREV_BTN.removeClass("d-none");
 		}
-		if (this.next == null) {
-			NEXT_BTN.addClass("d-none");
-		} else {
+		if (this.next != null) {
 			NEXT_BTN.removeClass("d-none");
 		}
 	}
@@ -186,9 +182,13 @@ $(window).on("load", function () {
 	state0.executeAction();
 	
 	PREV_BTN.click(function () {
+		PREV_BTN.addClass("d-none");
+		NEXT_BTN.addClass("d-none");
 		manager.previousState();
 	});
 	NEXT_BTN.click(function () {
+		PREV_BTN.addClass("d-none");
+		NEXT_BTN.addClass("d-none");
 		manager.nextState();
 	});
 });
