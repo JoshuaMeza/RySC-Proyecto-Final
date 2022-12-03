@@ -9,6 +9,10 @@ const TITLE_CONTAINER = $("#title-container");
 const JM = $("#img-jm");
 const JG = $("#img-jg");
 const RG = $("#img-rg");
+const ROUTER_1 = $("#router1");
+const ROUTER_2 = $("#router2");
+const ROUTER_3 = $("#router3");
+const ROUTER_4 = $("#router4");
 
 // Helpers
 function resetWorldContainerContents() {
@@ -19,6 +23,10 @@ function resetWorldContainerContents() {
 	JM.addClass("appear-jm");
 	JG.addClass("appear-jg");
 	RG.addClass("appear-rg");
+	ROUTER_1.addClass("d-none");
+	ROUTER_2.addClass("d-none");
+	ROUTER_3.addClass("d-none");
+	ROUTER_4.addClass("d-none");
 }
 
 function sleep(ms) {
@@ -112,7 +120,7 @@ var state0 = new TransitionState(() => {
 
 var state1 = new TransitionState(() => {
 	// FRAME 4
-	console.log("action STATE 1");
+	ROUTER_1.removeClass("d-none");
 }, async (state) => {
 	for (let i = 3; i >= 1; i--) {
 		await sleep(SLEEP_TIME);
@@ -133,7 +141,8 @@ var state1 = new TransitionState(() => {
 
 var state2 = new TransitionState(() => {
 	// FRAME 12
-	console.log("action STATE 2");
+	ROUTER_2.removeClass("d-none");
+	ROUTER_3.removeClass("d-none");
 }, async (state) => {
 	for (let i = 11; i >= 4; i--) {
 		await sleep(SLEEP_TIME);
@@ -154,7 +163,7 @@ var state2 = new TransitionState(() => {
 
 var state3 = new TransitionState(() => {
 	// FRAME 17
-	console.log("action STATE 3");
+	ROUTER_4.removeClass("d-none");
 }, async (state) => {
 	for (let i = 16; i >= 12; i--) {
 		await sleep(SLEEP_TIME);
