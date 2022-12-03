@@ -9,9 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JoshuaMeza/RySC-Proyecto-Final/issues"
-  },
   "homepage": "https://joshuameza.github.io/RySC-Proyecto-Final",
   "dependencies": {
     "gh-pages": "^4.0.0"
