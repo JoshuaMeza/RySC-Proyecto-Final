@@ -8,13 +8,13 @@
     <title>Features</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/dist/css/programming_with_sockets.css">
-    <link rel="shortcut icon" href="/dist/img/favicon.ico?" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../../css/programming_with_sockets.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico?" type="image/vnd.microsoft.icon">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/dist/index.html">RySC</a>
+            <a class="navbar-brand" href="../../index.html">RySC</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/dist/index.html">Inicio</a>
+                        <a class="nav-link" href="../../index.html">Inicio</a>
                     </li>
                 </ul>
             </div>
@@ -42,7 +42,7 @@
             de red. Cuando se consideró cómo añadir funciones al sistema operativo para
             suministrar acceso a las comunicaciones, surgieron dos posibilidades:
         </p>
-        <img class="mx-auto d-block" style="max-width: 35%; float: right; padding: 2% 0 1% 1%" src="/dist/img/sockets.png" alt="Card image cap">
+        <img class="mx-auto d-block" style="max-width: 35%; float: right; padding: 2% 0 1% 1%" src="../../img/sockets.png" alt="Card image cap">
         <ul>
             <li>Definir funciones que soportaran específicamente el protocolo TCP/IP.</li>
             <li>Definir funciones que soportaran cualquier tipo de protocolo de comunicaciones y parametrizarlas cuando se quisiera utilizar TCP/IP.</li>
@@ -55,7 +55,7 @@
             funciones. De esta manera, cada vez que se quiera utilizar el interfaz de
             sockets, será necesario especificar:            
         </p>
-        <img class="mx-auto d-block" style="max-width: 40%; float: left; padding: 0 4% 1% 2%" src="/dist/img/sockets_4.png" alt="Card image cap">
+        <img class="mx-auto d-block" style="max-width: 40%; float: left; padding: 0 4% 1% 2%" src="../../img/sockets_4.png" alt="Card image cap">
         <ul>
             <li><strong>Familia de protocolo: </strong>Hay que indicar qué tipo de protocolo se va a utilizar para realizar las distintas comunicaciones. Los protocolos TCP/IP constituyen una única familia representada por la constante PF_INET. En el caso de comunicaciones entre procesos en la misma máquina usando el sistema de ficheros, tendríamos la familia de protocolos identificada como PF_UNIX.</li>
             <li><strong>Tipo de servicio: </strong>El interfaz permite seleccionar el tipo de servicio que se desea siempre y cuando el protocolo seleccionado sea capaz de suministrar distintos tipos de servicio. Aquí por tipo de servicio nos estamos refiriendo a cosas como comunicación orientada a la conexión o bien a comunicación orientada a los datagramas.</li>
@@ -68,6 +68,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="../js/template.js"></script>
+    <script src="../../js/template.js"></script>
 </body>
 </html>
