@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import './global/general', './global/world';
 
 body {
@@ -36,6 +37,7 @@ body {
 }
 
 #title-container {
+    @include scaleAnimation;
     width: 500px;
     background: $index_title_container_background;
     padding: 5px 10px;
@@ -50,10 +52,6 @@ body {
         color: $index_title_color;
         margin: 0;
     }
-}
-
-.appear-title {
-    @include scaleAnimation;
 }
 
 .author-img {
@@ -86,13 +84,65 @@ body {
 }
 
 .appear-jm {
-    @include appearAnimation(0.3s);
+    @include appearAnimation(1.3s);
 }
 
 .appear-jg {
-    @include appearAnimation(0.2s);
+    @include appearAnimation(1.2s);
 }
 
 .appear-rg {
-    @include appearAnimation(0.4s);
+    @include appearAnimation(1.4s);
+}
+
+.router-container {
+    @include appearAnimation(0.2s);
+    width: 150px;
+    height: auto;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        font-family: 'VT323', monospace;
+        font-weight: bold;
+        color: $router_text_color;
+        text-align: center;
+        line-height: 15px;
+        background-color: $index_title_container_background;
+        margin: 0;
+        padding: 2px;
+    }
+
+    .router {
+        width: 60px;
+        height: 42px;
+    }
+}
+
+#router1 {
+    position: absolute;
+    top: 110px;
+    right: 190px;
+}
+
+#router2 {
+    position: absolute;
+    top: 340px;
+    right: 290px;
+}
+
+#router3 {
+    position: absolute;
+    top: 120px;
+    right: 310px;
+}
+
+#router4 {
+    position: absolute;
+    top: 415px;
+    right: 215px;
 }
