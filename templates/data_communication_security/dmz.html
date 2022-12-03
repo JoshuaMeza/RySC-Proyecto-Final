@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Joshua Meza, Jonathan Gomez, Ricardo Grimaldo">
+    <title>Seguridad en la comunicación de datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/data_communication_security.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico?" type="image/vnd.microsoft.icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">RySC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../data_communication_security.html">Menú</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container shadow">
+        <h1 class="text-center"><a href="../data_communication_security.html">Seguridad en la comunicación de datos</a></h1>
+        <br>
+        <h4>Redes Perimetrales</h4>
+        <img class="mx-auto d-block" 
+            style="max-width: 40%; float: left; padding: 2% 1% 2% 0" 
+            src="../../img/red-perimetral.png" alt="Card image cap">
+        <p>Se pueden comparar con las redes perimetrales de las canchas de fútbol, las cuales brindan seguridad tanto para el jugador como para el espectador en el sentido que la pelota de fútbol no salga volando de la cancha, y que todo se quede dentro de la cancha.</p>
+        <p>Asimismo, en las redes informáticas, las redes perimetrales (también conocidas como DMZ) es una red de seguridad que se encuentra entre la red interna de una organización e Internet, y protegen los datos de forma que nadie externo a la red y sin autorización pueda acceder a éstos, y así, permiten la conectividad segura entre las redes de la nube y las redes de los centros de datos locales o físicos. También permiten la conectividad segura hacia Internet y desde este.
+        </p>
+        <p>Gracias a las redes perimetrales se tiene un mejor control sobre el tráfico entrante y saliente, teniendo consigo grandes ventajas:</p>
+        <p>
+            <ul>
+                <li><span class="fw-bold">Protege a la empresa u organización de ataques externos:</span> Se establece una barrera entre la red interna y el exterior, lo que ayudará a evitar que los atacantes externos causen daños en la empresa.</li>
+                <li><span class="fw-bold">Detección de intrusiones:</span> Al establecer una barrera entre la red interna y el exterior, las redes perimetrales ayudarán a detectar intrusiones, bloquear el tráfico sospechoso y tomar medidas contra éstas.</li>
+                <li><span class="fw-bold">Protección contra ataques DDoS:</span> Los ataques DDos consisten en el ataque a sistemas, servidores o redes con tráfico para agotar los recursos y ancho de banda, teniendo como resultado la incapacidad de la víctima de procesar peticiones. Con la red perimetral, gracias a la barrera creada entre los recursos internos y el exterior, será posible de evitar y bloquear los ataques DDoS.</li>
+                <li><span class="fw-bold">Protección contra el robo de información:</span> Naturalmente, al estar los datos de la red interna de la empresa protegidos gracias a la red perimetral informática, esto ayudará a evitar que los atacantes accedan y roben información de la red interna.</li>
+            </ul>
+        </p> 
+        <figure class="figure float-end ms-3" style="max-width: 40%">
+            <img src="../../img/dmz.jpg" class="figure-img img-fluid rounded" alt="Card image cap">
+            <figcaption class="figure-caption float-end">Si un ciberdelincuente comprometiera un servidor de la zona desmilitarizada, tendría muchos más complicado acceder a la red local de la organización, ya que las conexiones procedentes de la DMZ se encuentran bloqueadas.</figcaption>
+        </figure>
+        <p>Por sobre todo, se tiene garantizada una mejora de la seguridad de la red, protegiendo los datos y la red interna de los ataques externos, ayudando también a controlar el tráfico entrante y saliente, pues el objetivo principal de los atacantes que intentan romper el área de seguridad perimetral es conseguir acceso a la información protegida, intentando hallar vulnerabilidades para aprovecharlas y entrar libremente a dicha información.</p>
+        <p>Seguido a esto, lamentablemente, en la actualidad el enfoque perimetral se está quedando obsoleto, siendo la razón principal que los datos ya no se alojan en una red interna, sino en la nube y entre varios proveedores de esta.</p>
+        <p>Eventualmente, las redes perimetrales cuentan con sus respectivas desventajas y vulnerabilidades, y es que su mayor fallo de seguridad es que si un atacante consigue acceder a la red interna que se supone está siendo protegida, también puede acceder a los datos y sistemas que haya dentro de esta. Por consiguiente, pueden penetrar en la red al robar las credenciales de usuario, aprovechar una vulnerabilidad de seguridad, introducir una infección de malware, o llevar a cabo un ataque de ingeniería social, entre otros métodos. </p>
+        <p>Si bien otras herramientas de seguridad y prevención de intrusiones como los firewalls pueden detener algunos de estos ataques, en el momento en que alguno de ellos consiga pasar, el coste es muy alto.</p>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/a2e2b9d23e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../../js/template.js"></script>
+</body>
+</html>

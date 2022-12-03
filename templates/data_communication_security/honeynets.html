@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Joshua Meza, Jonathan Gomez, Ricardo Grimaldo">
+    <title>Seguridad en la comunicación de datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/data_communication_security.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico?" type="image/vnd.microsoft.icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">RySC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../data_communication_security.html">Menú</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container shadow">
+        <h1 class="text-center"><a href="../data_communication_security.html">Seguridad en la comunicación de datos</a></h1>
+        <br>
+        <h4>HoneyNets</h4>
+        <img class="mx-auto d-block pe-3" 
+            style="max-width: 40%; float: left; padding: 2% 1% 2% 0" 
+            src="../../img/honeynet.jpg" alt="Card image cap">
+        <p>Las HoneyNets, cuya traducción literal significaría una red de miel, hace alusión a tal y como su nombre indica, una red que similar a la pegajosa miel, sirve como una red “trampa” para los ataques.</p>
+        <p>Antes de definir qué es una HoneyNet es necesario saber qué es una Honeypot, un sistema señuelo destinado a ser atacado o comprometido, con la capacidad de detectar y registrar estas acciones.</p>
+        <p>Este tipo de herramienta puede servir de ayuda en la prevención de ataques, la detección de intrusiones y la respuesta a este tipo de incidentes, siendo estas dos últimas las dos tareas para las que un honeypot ofrece las mayores ventajas:</p>
+        <br><p>
+            <ul>
+                <li>Como herramienta de prevención, un honeypot puede utilizarse para desalentar al atacante haciendo que pierda su tiempo tratando de entrar en un sistema en el que no va a encontrar información que le resulte realmente de provecho. Este tiempo puede utilizarse para obtener información del intruso, aprender sus técnicas y proteger los sistemas reales de producción. Además, si el atacante sabe que la compañía utiliza señuelos, será consciente de que corre el riesgo de que sus acciones queden registradas. Este temor a caer en una trampa puede suponer una barrera psicológica que haga que un intruso se lo piense dos veces antes de atacar los sistemas de una organización.</li>
+                <li>En lo que se refiere a su capacidad de detección de intrusiones, estas herramientas están diseñadas para detectar y recopilar información detallada sobre los ataques que vayan dirigidos contra los servicios que ofrecen.</li>
+                <li>Por último, este tipo de herramientas pueden utilizarse para la captura y el análisis de intrusiones con la finalidad de aprender las distintas técnicas y herramientas que utilizan los atacantes para llevar a cabo sus acciones, y para descubrir las vulnerabilidades buscadas por los intrusos y los motivos que les lleva a tratar de atacar el sistema.</li>
+            </ul>
+        </p>
+        <p>Ahora bien, una HoneyNet es el Honeypot más complejo, una herramienta de seguridad que cuya característica principal es ser una red completa para ser sondeada, atacada y comprometida por hipotéticos intrusos y atacantes, compuesta por un conjunto de sistemas creados para recibir dichos ataques junto a una serie de mecanismos encargados de monitorear, registrar y controlar estas acciones y ataques.</p>
+        <figure class="figure float-end" style="max-width: 40%">
+            <img src="../../img/honeynet arq.png" class="figure-img img-fluid rounded" alt="Card image cap">
+            <figcaption class="figure-caption float-end">Arquitectura típica de una HoneyNet</figcaption>
+        </figure>
+        <p>Su mayor diferencia con otros honeypot es que, debido a ser una red completa, puede estar compuesta por distintos sistemas trampa, como Linux, Solaris o Windows, de forma que proporcione un ambiente más creíble y real desde el punto de vista del atacante; además, permite aprender un mayor y variado número de tácticas de ataque.</p>
+        <p>Una honeynet puede contener cualquier componente de red imaginable, incluyendo routers y switches, lo que le permite replicar la red de cualquier organización. Este hecho, unido a que los equipos que contiene son sistemas reales con servicios y configuraciones habituales, hace que los riesgos y las vulnerabilidades que permite descubrir sean exactamente las mismas que se pueden encontrar en cualquier organización que cuente con sistemas similares a los expuestos.</p>
+        <p>Una Honeynet presenta dos requerimientos básicos para ser realmente útil y permitir la extracción de información valiosa:</p>
+        <p>
+            <ul>
+                <li><span class="fw-bold">Control del flujo de datos (Data control):</span> Siempre que se interactúe con un atacante, el peligro aumenta exponencialmente. Todo y que el objetivo de la Honeynet es el de ser comprometida y atacada, se debe mantener siempre un control del flujo de datos para evitar que el atacante la utilice contra terceros o contra la propia red. Si bien es cierto que cuanta más interacción permitamos con el exterior más datos reales se pueden obtener del atacante, se debe evaluar los riesgos que conlleva. Análogamente, una Honeynet que no permita ningún tipo de actividad con el exterior dejará de ser atractiva para un atacante y perderá toda su utilidad, por lo que la búsqueda de un equilibrio es esencial.</li>
+                <li><span class="fw-bold">Captura de datos (Data capture):</span> La captura de todos los movimientos y acciones que realice el atacante en la Honeynet revelará sus técnicas y motivaciones. Aunque es esencial que el nivel de vigilancia y captura sea alto, si este es excesivo o detectado por el atacante dejará de ser efectivo.</li>
+            </ul>
+        </p>
+        <p>Su nuevo enfoque a diferencia de otras herramientas de seguridad de Honeypot es la de no irse tanto hacia los objetivos de falsear datos o engañar a un posible atacante, sino que su objetivo principal se enfoca en recoger información real de cómo actúan los atacantes en un entorno de verdad, monitoreando sus acciones y ganando experiencia, de forma que se puedan analizar y encontrar nuevas estrategias, herramientas y ataques sin que el atacante perciba que está siendo observado.</p>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a2e2b9d23e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../../js/template.js"></script>
+</body>
+</html>

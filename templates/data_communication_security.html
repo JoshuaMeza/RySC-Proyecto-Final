@@ -47,40 +47,34 @@
                 <li><span class="fw-bold">Disponibilidad: </span>La información y recursos deberán estar disponibles para los entes autorizados.</li>
             </ul>
         </p>
-        <p>Si bien el avance de la tecnología ha traído consigo grandes avances y facilidades para la humanidad, a su vez, los cibercriminales y piratas informáticos se vuelven más hábiles en sus distintas amenazas y ataques por lo que, ante nuevos ataques informáticos, distintas medidas y herramientas de seguridad informática son necesarias, mientras que algunas ya se encuentran obsoletas, otras son difíciles de atacar para los cibercriminales debido a su eficiencia. A continuación, se presentan algunas de ellas:</p>
-        
-        <h4>a. Redes Perimetrales</h4>
-        <img class="mx-auto d-block" 
+        <p>Si bien el avance de la tecnología ha traído consigo grandes avances y facilidades para la humanidad, a su vez, los cibercriminales y piratas informáticos se vuelven más hábiles en sus distintas amenazas y ataques por lo que, ante nuevos ataques informáticos, distintas medidas y herramientas de seguridad informática son necesarias, mientras que algunas ya se encuentran obsoletas, otras son difíciles de atacar para los cibercriminales debido a su eficiencia, siempre con el mismo objetivo de mantener segura la red de la empresa. 
+            Algunos ejemplos de este tipo de herramientas son las <a href="./data_communication_security/dmz.html">redes perimetrales</a>, enfocadas a proteger la red interna y los datos de una empresa de intrusos y amenazas; 
+            o las <a href="./data_communication_security/honeynets.html">honeynets</a>, redes “trampa” que sirven para simular un ambiente real y atrapar a los atacantes para controlar y registrar sus acciones.</p>
+        <p>Este tipo de herramientas son para evitar y hacer frente a los ataques a la red de transmisión de datos, los cuales se dividen en:</p>
+        <img class="mx-auto d-block me-3" 
             style="max-width: 40%; float: left; padding: 2% 1% 2% 0" 
-            src="../img/red-perimetral.png" alt="Card image cap">
-        <p>Se pueden comparar con las redes perimetrales de las canchas de fútbol, las cuales brindan seguridad tanto para el jugador como para el espectador en el sentido que la pelota de fútbol no salga volando de la cancha, y que todo se quede dentro de la cancha.</p>
-        <p>Asimismo, en las redes informáticas, las redes perimetrales (también conocidas como DMZ) es una red de seguridad que se encuentra entre la red interna de una organización e Internet, y protegen los datos de forma que nadie externo a la red y sin autorización pueda acceder a éstos, y así, permiten la conectividad segura entre las redes de la nube y las redes de los centros de datos locales o físicos. También permiten la conectividad segura hacia Internet y desde este.
-        </p>
-        <p>Gracias a las redes perimetrales se tiene un mejor control sobre el tráfico entrante y saliente, teniendo consigo grandes ventajas:</p>
-        <p>
+            src="../img/passive-attack.png" alt="Card image cap">
+        <h4 class="fw-bold">Ataques pasivos: </h4>
+        <p>Son los que “escuchan” o monitorean las transmisiones. En este tipo de ataque se pueden encontrar:
             <ul>
-                <li><span class="fw-bold">Protege a la empresa u organización de ataques externos:</span> Se establece una barrera entre la red interna y el exterior, lo que ayudará a evitar que los atacantes externos causen daños en la empresa.</li>
-                <li><span class="fw-bold">Detección de intrusiones:</span> Al establecer una barrera entre la red interna y el exterior, las redes perimetrales ayudarán a detectar intrusiones, bloquear el tráfico sospechoso y tomar medidas contra éstas.</li>
-                <li><span class="fw-bold">Protección contra ataques DDoS:</span> Los ataques DDos consisten en el ataque a sistemas, servidores o redes con tráfico para agotar los recursos y ancho de banda, teniendo como resultado la incapacidad de la víctima de procesar peticiones. Con la red perimetral, gracias a la barrera creada entre los recursos internos y el exterior, será posible de evitar y bloquear los ataques DDoS.</li>
-                <li><span class="fw-bold">Protección contra el robo de información:</span> Naturalmente, al estar los datos de la red interna de la empresa protegidos gracias a la red perimetral informática, esto ayudará a evitar que los atacantes accedan y roben información de la red interna.</li>
+                <li><span class="fw-bold">Divulgación de la información (snooping): </span> Es un tipo de ataque pasivo por medio del cual el atacante se entera de la información transmitida; como por ejemplo escuchar una llamada telefónica, leer un correo electrónico abierto. Si bien no necesariamente significa que los ataques pasivos conozcan la información que fluye en una comunicación, se enfocan más en el conocimiento de ese flujo, volumen, horarios o naturaleza del mismo.</li>
+                <li><span class="fw-bold">Análisis de tráfico (conocido como packet sniffing): </span> Consiste en rastrear y recopilar algunos o todos los paquetes que pasan a través de una red de ordenadores. Este tipo de ataque pasivo se realiza cuando el atacante puede determinar la localización e identidad de quienes se están comunicando y determinar el mensaje que está siendo transmitido aun cuando este protegido por medio de cifrado.</li>
             </ul>
-        </p> 
-        <p>Por sobre todo, se tiene garantizada una mejora de la seguridad de la red, protegiendo los datos y la red interna de los ataques externos, ayudando también a controlar el tráfico entrante y saliente.</p>
-
-        <h4>b. HoneyNets </h4>
-        <img class="mx-auto d-block" 
-            style="max-width: 40%; float: left; padding: 2% 1% 2% 0" 
-            src="../img/honeynet.jpg" alt="Card image cap">
-        <p>Las HoneyNets, cuya traducción literal significaría una red de miel, hace alusión a como su nombre indica, una red que similar a la pegajosa miel, sirve como una red “trampa” para los ataques.</p>
-        <p>Antes de definir qué es una HoneyNet es necesario saber qué es una Honeypot, un sistema señuelo destinado a ser atacado o comprometido, con la capacidad de detectar y registrar estas acciones.</p>
-        <p>Ahora bien, una HoneyNet es el Honeypot más complejo, una herramienta de seguridad que cuya característica principal es ser una red completa para ser sondeada, atacada y comprometida por hipotéticos intrusos y atacantes, compuesta por un conjunto de sistemas creados para recibir dichos ataques junto a una serie de mecanismos encargados de monitorear, registrar y controlar estas acciones y ataques.</p>
-        <figure class="figure float-end" style="max-width: 40%">
-            <img src="../img/honeynet arq.png" class="figure-img img-fluid rounded" alt="Card image cap">
-            <figcaption class="figure-caption float-end">Arquitectura típica de una HoneyNet</figcaption>
-        </figure>
-        <p>Su mayor diferencia con otros honeypot es que, debido a ser una red completa, puede estar compuesta por distintos sistemas trampa, como Linux, Solaris o Windows, de forma que proporcione un ambiente más creíble y real desde el punto de vista del atacante; además, permite aprender un mayor y variado número de tácticas de ataque.</p>
-        <p>Su nuevo enfoque a diferencia de otras herramientas de seguridad de Honeypot es la de no irse tanto hacia los objetivos de falsear datos o engañar a un posible atacante, sino que su objetivo principal se enfoca en recoger información real de cómo actúan los atacantes en un entorno de verdad, monitoreando sus acciones y ganando experiencia, de forma que se puedan analizar y encontrar nuevas estrategias, herramientas y ataques sin que el atacante perciba que está siendo observado.</p>
-        <p>El siguiente video explica de manera gráfica cómo funcionan ambas herramientas: </p>
+        </p>
+        <img class="mx-auto d-block me-3" 
+            style="max-width: 30%; float: right; padding: 2% 1% 2% 0" 
+            src="../img/active-attack.png" alt="Card image cap">
+        <h4 class="fw-bold">Ataques activos: </h4>
+        <p>Son más directos y peligrosos, consistiendo en la modificación de los datos o creación de flujos de datos falsos. En este tipo de ataques se puede encontrar lo siguiente:
+            <ul>
+                <li><span class="fw-bold">Enmascaramiento (spoofing): </span> Es la suplantación de un ente autorizado para acceder y obtener información confidencial.</li>
+                <li><span class="fw-bold">Repetición: </span> Se realiza con la captura de unidades de datos que se vuelven a retransmitir para producir efectos no autorizados.</li>
+                <li><span class="fw-bold">Modificación de mensajes (tampering o data diddling): </span> Incluye la modificación, o en algunos casos, la destrucción no autorizada de datos y recursos.</li>
+                <li><span class="fw-bold">Interrupción (jamming o flooding): </span> Es la denegación de servicios a entes autorizados para obtener un fin específico, para obtener perturbaciones sobre la red desmejorando su rendimiento, o incluso inhabilitando la misma.</li>
+            </ul>
+            Es cuando distintas herramientas, métodos y acciones de prevención por parte de las organizaciones se utilizan, todo con el mismo objetivo de proteger sus datos ante las distintas amenazas cibernéticas que existen, desde minimizar la probabilidad de intromisión con la implantación de elementos de protección y la detección de cualquier intrusión lo antes posible.
+        </p>  
+        <p>El siguiente video explica de manera gráfica cómo funcionan dos herramientas de seguridad de la comunicación de datos, las <a href="./data_communication_security/dmz.html">redes perimetrales</a> y las <a href="./data_communication_security/honeynets.html">honeynets</a>: </p>
         <div>
             <iframe class="mx-auto d-block"  width="560" height="315" src="https://www.youtube.com/embed/FihkG72z7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
